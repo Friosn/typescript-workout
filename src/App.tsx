@@ -5,6 +5,7 @@ import FuncionsTS from './typescript/FuncionsTS'
 
 import HookCounter from './components/HookCounter'
 import Login from './components/Login'
+import FormTS from './components/FormTS'
 
 const App = () => {
   return (
@@ -21,6 +22,8 @@ const App = () => {
     
       <hr/>
       <h4>{<HookCounter/>}</h4>
+      <hr/>
+      <FormTS/>
 
     </div>
   )

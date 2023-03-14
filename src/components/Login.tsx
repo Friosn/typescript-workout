@@ -38,13 +38,14 @@ const authReducer = ( state: AuthState, action: AuthAction ): AuthState => {
 
 const Login = () => {
 
-    const [state, dispatch] = useReducer(authReducer, initialState)
+    const [{validating, token}, dispatch] = useReducer(authReducer, initialState)
 
     useEffect(() => {
         setTimeout(() => {
-            
+            dispatch({type: 'logout'})
         }, 1500);
     }, [])
+
 
 
   return (
